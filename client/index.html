@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERC 1155 token App</title>
+</head>
+<body>
+    <h1>ERC Token App</h1>
+    <p id="tok_error" style="display: none;">The App cannot be used because Metamask wallet is on wrong network. Please change network to RinkeBy or Polygon and try again</p>
+    <div id="tok">
+        <div id="token_div">
+            <h3>Create Token</h3>
+            <label for="ID"> Enter TokenID : <input type="text" id="ID" placeholder="Enter Token ID"></label><br>
+            <label for="amount"> Enter Token Amount : <input type="text" id="amount" placeholder="Enter amount"></label><br>
+            <button id="createToken">Deploy Token</button>
+            
+            <h3>Check token balance</h3>
+            <label for="amount"> Enter Token ID : <input type="text" id="tokenID" placeholder="Enter TokenID"></label><br>
+            <button id="checkToken">Check Token Balance</button><br>
+            <label for="tokenbalance">Token Balance <p id="tokenbalance"></p></label>
+        </div>
+        
+        <div id="nft_div">
+            <h3> Create NFT </h3>
+            <input type="text" id="nftId" placeholder="Enter Token ID"><br>
+            <label for="nftMessage"><input type="text" id="nftMessage" placeholder="Enter a message to store in NFT"></label><br>
+            <button id="createNFT">Create NFT</button>
+
+            <h3> Check Message in NFT </h3>
+            <input type="text" id="nftID" placeholder="Enter NFT ID">
+            <label for="nftmessage">Message stored in NFT <p id="nftmessage"></p></label>
+            <button id="getNFT">Check NFT Message</button><br>
+            <label for="nftmessage">Message stored in NFT <p id="nftmessage"></p></label>
+
+        </div>
+        
+    
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="dist/bundle.js"></script>
+</html>
