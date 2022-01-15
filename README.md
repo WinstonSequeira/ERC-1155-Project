@@ -16,6 +16,14 @@ A sample application which allows user to deploy tokens and NFT using ERC 1155 o
 ```
 git clone https://github.com/MarwinSequeira/ERC-1155-example.git.
 ```
+
+2. Create a .env file in the cloned directory and set the following variables.
+
+```
+PORT = 8080
+MODE=development
+LOCAL_NODE=http://localhost:7545
+```
 ## Usage
 
 1. After cloning the repo, go inside the cloned directory and run the node server by using the command
